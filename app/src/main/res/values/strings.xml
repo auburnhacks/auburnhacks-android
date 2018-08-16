@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">AuburnHacks Mobile</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="app_name">AuburnHacks</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="title_faq">FAQ</string>
+    <string name="title_sponsors">Sponsors</string>
+    <string name="settings_register">Register for AuburnHacks</string>
+    <string name="settings_slack">Join Us on Slack</string>
 </resources>
