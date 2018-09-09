@@ -11,10 +11,14 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.auburnhacks.auburnhacksmobile.views.FaqFragment;
+import com.auburnhacks.auburnhacksmobile.views.ScheduleFragment;
+import com.auburnhacks.auburnhacksmobile.views.SponsorsFragment;
 
 public class MainActivity extends AppCompatActivity {
 
+    private ScheduleFragment mScheduleFragment;
     private FaqFragment mFaqFragment;
+    private SponsorsFragment mSponsorsFragment;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -23,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_schedule:
+                    getSupportFragmentManager()
+                            .beginTransaction()
+                            .replace(R.id.container, mScheduleFragment)
+                            .commit();
                     return true;
                 case R.id.navigation_faq:
                     getSupportFragmentManager()
@@ -31,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
                             .commit();
                     return true;
                 case R.id.navigation_sponsors:
+                    getSupportFragmentManager()
+                            .beginTransaction()
+                            .replace(R.id.container, mSponsorsFragment)
+                            .commit();
                     return true;
             }
             return false;
@@ -42,10 +54,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mScheduleFragment = new ScheduleFragment();
         mFaqFragment = new FaqFragment();
+        mSponsorsFragment = new SponsorsFragment();
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.container, mFaqFragment)
+                .commit();
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        navigation.setSelectedItemId(R.id.navigation_faq);
     }
 
     @Override
