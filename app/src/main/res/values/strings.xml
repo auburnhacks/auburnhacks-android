@@ -5,4 +5,17 @@
     <string name="title_sponsors">Sponsors</string>
     <string name="settings_register">Register for AuburnHacks</string>
     <string name="settings_slack">Join Us on Slack</string>
+    <string name="url_slack">https://join.slack.com/t/auburnhacks/shared_invite/enQtNDMxNjY2NDM4MzI0LWZjNDU1ZTQ0OWRjMTc1MjQwMDhkZDg0ZmFiMWRhMTAyMGZiODRhMWNhM2E4MzJhYWQ3YjgwOWFhMTg5ZWZhYTY</string>
+    <string name="url_registration">http://registration.auburnhacks.com</string>
+    <string name="faq_q1">What is a hackathon? Are we hacking anything?</string>
+    <string name="faq_a1">We are not "hackers" as you would normally think of them. Hacking, in this context, involves working on a team (or alone, if you wish!) to put together a website, application, etc. This will be a 24-hour event that will encourage you to innovate and build something cool, or just learn something new, in the span of a weekend.</string>
+    <string name="faq_q2">When is AuburnHacks?</string>
+    <string name="faq_a2">The event will take place on the weekend of February 2 (Saturday), 2019 and conclude the following Sunday afternoon.</string>
+    <string name="faq_q3">Where is AuburnHacks?</string>
+    <string name="faq_a3">It will be in the Auburn University Student Center Ballroom, located at 255 Heisman Dr, Auburn, AL 36849. Parking will be available in the parking deck next to the building (see below).</string>
+    <string name="faq_q4">What do I need to bring?</string>
+    <string name="faq_a4">Bring your computer and whatever else you will need to code! Also, since it is an overnight event, bring a toothbrush as well as a sleeping bag! We will provide food, drinks, and caffeine, so you can focus on programming!</string>
+    <string name="faq_q5">What if I don\'t know how to code?</string>
+    <string name="faq_a5">No worries at all! We welcome participants of all majors and grade levels. Everyone can bring something to the table, and if you just want to hang out and learn from our mentors, you may do so as well! Hackathons are a learning experience for everyone, so AuburnHacks will encourage that type of environment.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
