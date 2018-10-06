@@ -5,24 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".views.FaqFragment">
 
-    <ScrollView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_faq"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView
-                android:id="@+id/faq_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/faq_a1"/>
-            <TextView
-                android:id="@+id/faq_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/faq_a2"/>
-        </LinearLayout>
-    </ScrollView>
+        android:layout_height="match_parent"/>
 
 </FrameLayout>
