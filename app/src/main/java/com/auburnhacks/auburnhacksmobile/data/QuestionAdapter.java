@@ -2,12 +2,12 @@ package com.auburnhacks.auburnhacksmobile.data;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.auburnhacks.auburnhacksmobile.R;
@@ -58,7 +58,8 @@ public class QuestionAdapter
         String question = questionList.get(position).getQuestion();
         String answer = questionList.get(position).getAnswer();
         holder.questionTv.setText(question);
-        holder.answerTv.setText(answer);
+        holder.answerTv.setText(Html.fromHtml(answer));
+        holder.answerTv.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
     @Override
